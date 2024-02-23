@@ -64,12 +64,6 @@ app = Flask(__name__)
 def home():
     return render_template("home1.html")
 
-@app.route("/ash")
-def ash():
-    return "Hello, Ash!"
-
-if __name__ == "__2main__":
-    app.run(debug=True)
 
 create a directory: templates
 inside templates directory create file home1.html
@@ -80,9 +74,7 @@ inside templates directory create file home1.html
   <title>First Flask Page</title>
 
    <div class="page-header">
-    <h1> My Awesome Bioinformatics Project </h1>
-    <p> Flask is Functional </p>
-    <h1>Hello World!</h1>
+    <h1> Drug Repurposing Project </h1>
 
    </div>
   </html>
@@ -119,28 +111,12 @@ def home():
 def about():
     return render_template("about.html")
 
-@app.route("/ash")
-def ash():
-    return "Hello, Ash!"
-
-if __name__ == "__3main__":
-    app.run(debug=True)
 
 inside templates directory create file about.html
 vi about.html
 
   <!DOCTYPE html>
   <html lang="en" dir="ltr">
-
-  <title>First Flask Page</title>
-
-   <div class="page-header">
-    <h1> My Awesome Bioinformatics Project </h1>
-    <p> Flask is Functional </p>
-    <h1>Hello World!</h1>
-
-   </div>
-  </html>
 
 $ export FLASK_APP=3main.py
 
